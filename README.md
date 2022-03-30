@@ -11,9 +11,10 @@ add, feel free to
 [open an issue on GitHub](https://github.com/ThatNerdSquared/mrna101/issues).
 
 **TODO:**
-- [ ] Fix padding issues
-- [ ] Slight responsiveness fixes
-- [ ] Add personal links + better resource links
+- [x] Fix padding issues
+- [x] Slight responsiveness fixes
+- [x] Add footnotes
+- [x] Add personal links + better resource links
 
 If you liked this website and want to support further development, or just want
 to support my work in general, feel free to donate below!
