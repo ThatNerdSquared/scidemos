@@ -14,6 +14,11 @@
     src: url(./assets/Noteworthy.ttc);
 }
 
+@font-face {
+    font-family: BadaBoom BB;
+    src: url(./assets/BadaBoom-BB.ttf);
+}
+
 h1 {
     font-style: normal;
     font-weight: 600;
