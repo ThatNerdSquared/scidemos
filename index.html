@@ -13,27 +13,254 @@
 </head>
 <body>
     <div id="spacer"></div>
+    <!-- Header -->
     <div class="custom-card">
         <div id="header-box" class="accented-box">
             <h1>mRNA 101</h1>
         </div>
     </div>
+    <!-- Intro -->
     <div class="custom-card">
         <div class="accented-box">
-            <h2>
+            <p class="text-center">
                 We’ve heard a lot about mRNA technology over the last few years as it's
                 played a vital role in curbing the spread of COVID-19, but how does it
                 actually work?
-            </h2>
-            <h2>
+            </p>
+            <p class="text-center">
                 Let’s take a deep dive into what mRNA is, and how new technology utilizes it
                 to create vaccines, combat disease, and more.
-            </h2>
+            </p>
         </div>
     </div>
+    <!-- description 1 -->
     <div class="blackout">
-        <p class="col text-start">mRNA is a product of gene expression, the process used to create proteins from genes.</p>
-        <p class="col text-end">Gene expression is made up of two main steps: transcription and translation.</p>
+        <div class="row">
+            <p class="col-md-6 text-start">
+                mRNA is a product of gene expression, the process used to create proteins from genes.
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <img
+                src="./assets/all-micro.svg"
+                class="col central-graphic img-fluid"
+                alt="DNA, RNA, and protein."
+            >
+        </div>
+        <div class="row">
+            <p class="col-md-6 text-end ms-auto">
+                Gene expression is made up of two main steps: transcription and translation.
+            </p>
+        </div>
+    </div>
+    <!-- description 2 -->
+    <div class="blackout">
+        <div class="row">
+            <p class="col-md-6 text-start">
+                During transcription, DNA passes gene information to RNA.
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <img
+                src="./assets/dna-to-rna.svg"
+                class="col central-graphic img-fluid"
+                alt="DNA to RNA."
+            >
+        </div>
+        <div class="row">
+            <p class="col-md-6 text-end ms-auto">
+                mRNA is a special kind of RNA that tells cells how to create proteins.
+            </p>
+        </div>
+    </div>
+    <!-- description 3 -->
+    <div class="blackout">
+        <div class="row">
+            <p class="col-md-6 text-start">
+                It's known as messenger RNA because it delivers information from the nucleus of the cell to the cytoplasm.
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <img
+                src="./assets/rna-to-protein.svg"
+                class="col central-graphic img-fluid"
+                alt=" RNA to protein."
+            >
+        </div>
+        <div class="row">
+            <p class="col-md-6 text-end ms-auto">
+                mRNA works with a ribosome and tRNA (transfer RNA) to build proteins from individual amino acids.
+            </p>
+        </div>
+    </div>
+    <div id="spacer"></div>
+    <!-- vaccines header -->
+    <div class="custom-card">
+        <div class="accented-box-inv">
+            <h2>So, how do vaccines utilize mRNA to produce immunity?</h2>
+        </div>
+    </div>
+    <!-- vaccine pane 1 -->
+    <div class="pane">
+        <div class="row align-items-center">
+            <div class="col">
+                <img
+                    src="./assets/vaccine.svg"
+                    class="split-graphic img-fluid"
+                    alt="Vaccine injecting mRNA."
+                >
+            </div>
+            <div class="col">
+                <p class="text-end">
+                    The process starts when mRNA is introduced into the body. Since mRNA tells cells how to create proteins, a piece of viral protein is created.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- vaccine pane 2 -->
+    <div class="blackout-pane">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="text-start">
+                This piece of protein is from the outer membrane of the viral cell and is <i>neither infectious nor a whole virus.</i>
+                </p>
+            </div>
+            <div class="col">
+                <img
+                    src="./assets/protein-closeup.svg"
+                    class="split-graphic-inv img-fluid"
+                    alt="Protein piece closeup."
+                >
+            </div>
+        </div>
+    </div>
+    <!-- vaccine pane 3 -->
+    <div class="pane">
+        <div class="row align-items-center">
+            <div class="col">
+                <img
+                    src="./assets/antibodies.svg"
+                    class="split-graphic img-fluid"
+                    alt="Antibodies surrounding viral protein."
+                >
+            </div>
+            <div class="col">
+                <p class="text-end">
+                    Your body recognizes this piece of viral protein as a foreign object, and starts producing antibodies to counter the perceived threat.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- vaccine pane 4 -->
+    <div class="blackout-pane">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="text-start">
+                    These antibodies work to kill off the protein produced by the mRNA.
+                </p>
+                <p class="text-start">
+                    Since the antibodies stay behind even after the protein is gone, your body is now ready to counteract the threat if it occurs again with a full virus.
+                </p>
+            </div>
+            <div class="col">
+                <img
+                    class="split-graphic-inv"
+                    src="./assets/threat-eliminated.svg"
+                    alt="Antibodies after killing off viral protein.">
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <!-- benefits header -->
+    <div class="custom-card">
+        <div class="accented-box">
+            <h2>What benefits does mRNA have over traditional methods?</h2>
+        </div>
+    </div>
+    <!-- benefits 1 -->
+    <div class="pane">
+        <p class="text-center">
+            Although you might not have heard of it until recently, mRNA technology is actually very safe. 
+        </p>
+        <div class="row align-items-center">
+            <div class="col">
+                <img
+                    src="./assets/mrna-degrades.svg"
+                    class="split-graphic img-fluid"
+                    alt="Graphic of mRNA degrading as protein forms."
+                >
+            </div>
+            <div class="col">
+                <p class="text-end">
+                    The mRNA does not interact with the DNA in our cells, and it degrades naturally after use in our body.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- benefits 2 -->
+    <div class="blackout">
+        <div class="row">
+            <p class="col-md-6 text-start">
+                mRNA-based treatments can also be created at a much quicker scale.
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <img
+                src="./assets/test-tube.svg"
+                class="col central-graphic img-fluid"
+                alt=" RNA to protein."
+            >
+        </div>
+        <div class="row">
+            <p class="col-md-6 text-end ms-auto">
+                Scientists can develop mRNA synthetically in days, since the process requires just the necessary genetic code.
+            </p>
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <!-- future header -->
+    <div class="custom-card">
+        <div class="accented-box-inv">
+            <h2>mRNA technology also has a bright future as a platform for developing treatments to other diseases!</h2>
+        </div>
+    </div>
+    <!-- future 1 -->
+    <div class="pane">
+        <div class="row align-items-center">
+            <div class="col">
+                <p class="text-start">
+                    For example, we may be able to develop treatments for the Zika virus, rabies, the flu, and more using this technology.
+                </p>
+            </div>
+            <div class="col">
+                <img
+                    src="./assets/zika-oh-no.svg"
+                    class="split-graphic-inv img-fluid"
+                    alt="Zika virus with speech bubble."
+                >
+            </div>
+        </div>
+    </div>
+    <!-- future 2 -->
+    <div class="pane">
+        <div class="row align-items-center">
+            <p class="text-center">
+                In the future, we might even be able to create "universal" vaccines that protect from things like future strains of coronaviruses.
+            </p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <img
+                    class="split-graphic img-fluid"
+                    src="./assets/mrna-with-sword.svg"
+                    alt="mRNA with sword fighting coronaviruses.">
+            </div>
+            <div class="col">
+                <p class="text-start">
+                    Using mRNA, we could create treatments targeting common properties between these immune threats.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
