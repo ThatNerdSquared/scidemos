@@ -16,52 +16,82 @@
 			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 			crossorigin="anonymous"
 		></script>
-        <script src="main.js"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#safetymodal">
+            Launch demo modal
+        </button>
+		<div id="safetymodal" class="modal fade" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Bunsen Burner Safety</h5>
+					</div>
+					<div class="modal-body">
+						<p>When using a Bunsen burner:</p>
+                        <ul>
+                            <li>Do not leave the gas running for a long time without igniting it, as the gas is methane and inhaling high concentrations of it is a bad idea.</li>
+                            <li>Remember to clear all surrounding objects, especially flammable ones.
+                                <ul>
+                                    <li>This also includes hair and clothing, so tie up long hair and don’t wear loose clothing.</li>
+                                </ul>
+                            </li>
+                            <li>In case of a fire, use the fire extinguisher — don’t use water to put fires out.
+                                <ul>
+                                    <li>If your clothing catches fire, get people to help with the fire blanket, wrap yourself in it, and roll around on the ground until the fire is put out.</li>
+                                </ul>
+                            </li>
+                            <li>Accidents that happen should be reported to the teacher as soon as possible.</li>
+                        </ul>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="image-wrapper">
 			<button
-                type="button"
-                class="btn btn-secondary chimney"
+				type="button"
+				class="btn btn-secondary"
+				id="chimney"
 				data-bs-toggle="tooltip"
-				data-bs-placement="right"
-				data-bs-title="Called the chimney, the vertical tube of the Bunsen burner directs methane gas upwards into a jet, providing fuel for the fire. Do not touch it while the flame is burning because it is hot, and don’t put anything above it that is flammable or will be negatively affected by fire."
 			>
 				Chimney
 			</button>
 			<button
-                type="button"
-                class="btn btn-secondary gas-tube"
+				type="button"
+				class="btn btn-secondary"
+				id="gas-tube"
 				data-bs-toggle="tooltip"
-				data-bs-placement="right"
-				data-bs-title="The gas tube of a Bunsen Burner carries pressurised gas, normally methane, to the burner. This tube is normally attached to the gas valve, which releases a steady, controlled flow of gaseous gas into the burner. The tube is connected to the burner at the bottom, and ensures that the gas and oxygen from the oxygen valve are evenly mixed before it is burned. In addition, this tube is often made of rubber, which helps prevent gas leakages."
 			>
 				Gas Tube
 			</button>
 			<button
-                type="button"
-                class="btn btn-secondary nozzle"
+				type="button"
+				class="btn btn-secondary"
+				id="nozzle"
 				data-bs-toggle="tooltip"
-				data-bs-placement="right"
-				data-bs-title="The nozzle of the burner is where the flame and remaining uncombusted gas emerge. This component is often made with metal, which is resistant to burning. Bunsen burners have a nozzle that is often quite wide, which helps maintain a controlled gas pressure."
 			>
 				Nozzle
 			</button>
 			<button
-                type="button"
-                class="btn btn-secondary oxygen-valve"
+				type="button"
+				class="btn btn-secondary"
+				id="oxygen-valve"
 				data-bs-toggle="tooltip"
-				data-bs-placement="right"
-				data-bs-title="The oxygen valve of a Bunsen burner allows for oxygen to enter the burner and contribute to the oxidation of the gas. This valve contains a screw mechanism, which allows for controlled oxygen release into the burner. The oxygen valve is one of two ways to control the flame’s size, the other way being the gas valve. In addition, the oxygen valve is one of the key components for creating a successful flame, as it controls the amount of oxygen that enters the burner, thereby influencing the size of the flame."
 			>
 				Oxygen Valve
 			</button>
-			<img src="./assets/bunsen-burner.svg"/>
+			<img src="./assets/bunsen-burner.svg" />
 		</div>
 	</body>
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
+	<script src="main.js"></script>
 </html>
