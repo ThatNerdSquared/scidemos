@@ -1,154 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="shortcut icon" type="image/svg" href="./assets/favicon.svg" />
-        <title>Bunsen Burner Demo</title>
-        <!-- Bootstrap core CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous"
-        ></script>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <button
-            type="button"
-            class="btn btn-primary"
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" type="image/svg" href="./assets/favicon.svg" />
+		<title>Bunsen Burner Demo</title>
+		<!-- Bootstrap core CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<button
+			type="button"
+			class="btn btn-primary"
+			data-bs-toggle="modal"
+			data-bs-target="#safetymodal"
+		>
+			⚠️ SAFETY - PLEASE READ! ⚠️
+		</button>
+		<div
+			id="safetymodal"
+			class="modal fade"
+			tabindex="-1"
+			aria-labelledby="safetymodal"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Bunsen Burner Safety</h5>
+					</div>
+					<div class="modal-body">
+						<p>When using a Bunsen burner:</p>
+						<ul>
+							<li>
+								Do not leave the gas running for a long time without igniting
+								it, as the gas is methane and inhaling high concentrations of it
+								is a bad idea.
+							</li>
+							<li>
+								Remember to clear all surrounding objects, especially flammable
+								ones.
+								<ul>
+									<li>
+										This also includes hair and clothing, so tie up long hair
+										and don’t wear loose clothing.
+									</li>
+								</ul>
+							</li>
+							<li>
+								In case of a fire, use the fire extinguisher — don’t use water
+								to put fires out.
+								<ul>
+									<li>
+										If your clothing catches fire, get people to help with the
+										fire blanket, wrap yourself in it, and roll around on the
+										ground until the fire is put out.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Accidents that happen should be reported to the teacher as soon
+								as possible.
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="image-wrapper">
+			<button
+				type="button"
+				class="btn btn-secondary"
+				id="chimney"
+				data-bs-toggle="tooltip"
+			>
+				Chimney
+			</button>
+			<button
+				type="button"
+				class="btn btn-secondary"
+				id="gas-tube"
+				data-bs-toggle="tooltip"
+			>
+				Gas Tube
+			</button>
+			<button
+				type="button"
+				class="btn btn-secondary"
+				id="nozzle"
+				data-bs-toggle="tooltip"
+			>
+				Nozzle
+			</button>
+			<button
+				type="button"
+				class="btn btn-secondary"
+				id="oxygen-valve"
+				data-bs-toggle="tooltip"
+			>
+				Oxygen Valve
+			</button>
+			<button
+				type="button"
+				class="btn btn-secondary"
+				id="flint"
+				data-bs-toggle="tooltip"
+			>
+				Flint
+			</button>
+			<img src="./assets/bunsen-burner.svg" />
+			<img src="./assets/flint-striker.svg" id="flintimg" />
+			<img src="./assets/flame.svg" id="flameimg" />
+		</div>
+		<button
+			type="button"
+			class="btn btn-primary"
+			id="step1"
             data-bs-toggle="modal"
-            data-bs-target="#safetymodal"
-        >
-            ⚠️ SAFETY - PLEASE READ! ⚠️
-        </button>
-        <div id="safetymodal" class="modal fade" tabindex="-1" aria-labelledby="safetymodal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Bunsen Burner Safety</h5>
-                    </div>
-                    <div class="modal-body">
-                        <p>When using a Bunsen burner:</p>
+            data-bs-target="#step1modal"
+		>
+			Step 1
+		</button>
+		<div
+			id="step1modal"
+			class="modal fade"
+			tabindex="-1"
+			aria-labelledby="step1modal"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Lighting the Burner: Step 1</h5>
+					</div>
+					<div class="modal-body">
+						<ul>
+							<li>
+								First, open the gas valve slightly to release some fuel into the
+								burner.
+								<ul>
+									<li>
+										It’s not advised to keep the valve open for too long at a
+										time without a flame, as an excessive build-up of flammable
+										gases is not conducive to human life.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Once you have some gas flowing into the burner, you can strike
+								the flint over the flame.
+							</li>
+							<li>
+								If three strike attempts have passed without a flame, let the
+								gas dissipate before trying again.
+							</li>
+						</ul>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button
+			type="button"
+			class="btn btn-primary"
+			id="step2"
+            data-bs-toggle="modal"
+            data-bs-target="#step2modal"
+		>
+			Step 2
+		</button>
+		<div
+			id="step2modal"
+			class="modal fade"
+			tabindex="-1"
+			aria-labelledby="step2modal"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Lighting the Burner: Step 2</h5>
+					</div>
+					<div class="modal-body">
                         <ul>
-                            <li>
-                                Do not leave the gas running for a long time without igniting
-                                it, as the gas is methane and inhaling high concentrations of it
-                                is a bad idea.
-                            </li>
-                            <li>
-                                Remember to clear all surrounding objects, especially flammable
-                                ones.
-                                <ul>
-                                    <li>
-                                        This also includes hair and clothing, so tie up long hair
-                                        and don’t wear loose clothing.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                In case of a fire, use the fire extinguisher — don’t use water
-                                to put fires out.
-                                <ul>
-                                    <li>
-                                        If your clothing catches fire, get people to help with the
-                                        fire blanket, wrap yourself in it, and roll around on the
-                                        ground until the fire is put out.
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                Accidents that happen should be reported to the teacher as soon
-                                as possible.
-                            </li>
+                            <li>Begin by pressing the flint portion hard against the steel plate.</li>
+                            <li>Then, squeeze the handle of the flint so that it rubs against the steel plate and generates sparks.</li>
+                            <li>It’s recommended that you have the sparks facing away from you during this process, by facing the small cup away from you.</li>
                         </ul>
-                    </div>
-                    <div class="modal-footer">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-dismiss="modal"
-                        >
-                            OK
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="image-wrapper">
-            <button
-                type="button"
-                class="btn btn-secondary"
-                id="chimney"
-                data-bs-toggle="tooltip"
-            >
-                Chimney
-            </button>
-            <button
-                type="button"
-                class="btn btn-secondary"
-                id="gas-tube"
-                data-bs-toggle="tooltip"
-            >
-                Gas Tube
-            </button>
-            <button
-                type="button"
-                class="btn btn-secondary"
-                id="nozzle"
-                data-bs-toggle="tooltip"
-            >
-                Nozzle
-            </button>
-            <button
-                type="button"
-                class="btn btn-secondary"
-                id="oxygen-valve"
-                data-bs-toggle="tooltip"
-            >
-                Oxygen Valve
-            </button>
-            <button
-                type="button"
-                class="btn btn-secondary"
-                id="flint"
-                data-bs-toggle="tooltip"
-            >
-                Flint
-            </button>
-            <img src="./assets/bunsen-burner.svg" />
-            <img src="./assets/flint-striker.svg" id="flintimg"/>
-            <img src="./assets/flame.svg" id="flameimg"/>
-        </div>
-        <button
-            type="button"
-            class="btn btn-primary"
-            id="step1"
-            data-bs-toggle="tooltip"
-        >
-            Step 1
-        </button>
-        <button
-            type="button"
-            class="btn btn-primary"
-            id="step2"
-            data-bs-toggle="tooltip"
-        >
-            Step 2
-        </button>
-        <button
-            type="button"
-            class="btn btn-primary"
-            id="step3"
-            data-bs-toggle="tooltip"
-        >
-            Step 3
-        </button>
-    </body>
-    <script src="main.js"></script>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button
+			type="button"
+			class="btn btn-primary"
+			id="step3"
+            data-bs-toggle="modal"
+            data-bs-target="#step3modal"
+		>
+			Step 3
+		</button>
+		<div
+			id="step3modal"
+			class="modal fade"
+			tabindex="-1"
+			aria-labelledby="step13odal"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Lighting the Burner: Step 3</h5>
+					</div>
+					<div class="modal-body">
+                        <p>There are two ways one can adjust the size of the flame on a Bunsen burner:</p>
+                        <ul>
+                            <li>changing the flow of gas</li>
+                            <li>changing how open the oxygen valve is</li>
+                        </ul>
+                        <p>The Bunsen burner’s flame is a combustion reaction between oxygen and methane, kick-started with the heat of a flint striker. Increasing the amount of methane and oxygen increases the size of the flame, done by rotating the gas valve in the right direction or opening the oxygen valve, respectively.</p>
+                        <p>This is because more reactant is introduced into the reaction, increasing the rate of reaction. Decreasing either reactant slows the reaction, and makes the flame smaller.</p>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary"
+							data-bs-dismiss="modal"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="main.js"></script>
 </html>
