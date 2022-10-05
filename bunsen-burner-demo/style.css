@@ -16,26 +16,58 @@ body {
     position: absolute;
     left: 45%;
     top: 50%;
-    /* z-index: 2; */
 }
 
 #nozzle {
     position: absolute;
     left: 45%;
     top: 30%;
-    /* z-index: 2; */
 }
 
 #oxygen-valve {
     position: absolute;
     left: 42%;
     top: 75%;
-    z-index: 2;
 }
 
 #gas-tube {
     position: absolute;
     left: 70%;
     top: 68%;
+}
+
+#flameimg {
+    position: absolute;
+    left: 36%;
+    top: 5%;
+    width: 25%;
+    height: auto;
+    /* visibility: hidden; */
+    animation: rotate infinite 2s alternate;
+    transform-origin: 50% 100%;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-3deg);
+    }
+
+    to {
+        transform: rotate(3deg);
+    }
+}
+
+#flintimg {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 0%;
+    top: 0%;
     z-index: 2;
+}
+#flint {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    z-index: 3;
 }
