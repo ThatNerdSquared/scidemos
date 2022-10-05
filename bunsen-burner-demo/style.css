@@ -71,3 +71,20 @@ body {
     top: 10%;
     z-index: 3;
 }
+#step1 {
+    position: absolute;
+    left: 80%;
+    top: 65%;
+}
+#step2 {
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    z-index: 4;
+}
+#step3 {
+    position: absolute;
+    left: 40%;
+    top: 75%;
+    z-index: 4;
+}
