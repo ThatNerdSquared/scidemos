@@ -1,4 +1,6 @@
-# SciDemos
+<p align="center"><img src="./scidemos-icon.svg" width=200></p>
+
+# 🧬 SciDemos
 
 Scientific communication is something I'm passionate about. To that end,
 SciDemos is a collection of small webpages I've built to explain concepts
