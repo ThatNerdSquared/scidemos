@@ -1,3 +1,21 @@
 body {
-    padding: 20%
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.scidemos-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.scidemos-header img {
+    height: 4rem;
+    width: auto;
 }
